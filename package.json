@@ -1,0 +1,53 @@
+{
+  "name": "moleculer-bun-demo",
+  "version": "0.1.1",
+  "description": "Moleculer-based microservices project",
+  "author": "Rogerio Lucas",
+  "type": "module",
+  "scripts": {
+    "dev": "rimraf dist/; tsup --watch --clean --onSuccess \"SERVICEDIR=dist SERVICES=math moleculer-runner-esm --env --hot --repl\""
+  },
+  "bin": {
+    "moleculer-runner-esm": "node_modules/moleculer/bin/moleculer-runner.mjs --config moleculer.config.js"
+  },
+  "keywords": [
+    "microservices",
+    "moleculer"
+  ],
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.11",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.10.4",
+    "@types/qs": "^6.9.10",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "eslint": "^8.55.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jest": "^27.6.0",
+    "moleculer-repl": "^0.7.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@524c/jsutils": "^1.0.0",
+    "@524c/moleculer-io": "^2.3.0-1",
+    "dotenv": "^16.3.1",
+    "http": "^0.0.1-security",
+    "http-proxy-middleware": "^2.0.6",
+    "ioredis": "^5.3.2",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "moleculer": "latest",
+    "nats": "2.18.0",
+    "rimraf": "^5.0.5",
+    "tiny-glob": "^0.2.9",
+    "tsup": "^8.0.1"
+  },
+  "engines": {
+    "node": ">= 18.x.x"
+  }
+}

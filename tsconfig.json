@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    // add Bun type definitions
+    "types": ["bun-types"],
+
+    "outDir": "./dist",
+    "rootDir": "./src",
+
+    "lib": ["esnext"],
+    "module": "esnext",
+    "target": "esnext",
+
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
+
+    "allowJs": true,
+    "esModuleInterop": true,
+
+    // best practices
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "$services/*": [
+        "./src/services/*"
+      ],
+      "$lib/*": [
+        "./src/lib/*"
+      ],
+      "$models/*": [
+        "./src/models/*"
+      ],
+      "$types": [
+        "./src/types"
+      ],
+      "$config": [
+        "./src/config"
+      ],
+    },
+  },
+  "include": ["src/**/*.ts", "tsup.config.js", "README.md", "jest.config.js", "moleculer.config.js", "./**/*.spec.ts",],
+  "exclude": ["node_modules", "dist"]
+}

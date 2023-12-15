@@ -1,0 +1,6 @@
+[submodule "lib/p2ptypes"]
+	path = lib/p2ptypes
+	url = https://github.com/engagep2p/p2ptypes
+[submodule "lib/p2pauth"]
+	path = lib/p2pauth
+	url = https://github.com/engagep2p/p2pauth
